@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <div>
+        <canvas id="canvas"></canvas>
+    </div>
+    
+    <div class="content">
+        <h1>Find near earth asteroids</h1>
+        <label for="start-date">start date</label>
+        <input type="text" name="start-date" id="start-date" placeholder="yyyy-mm-dd">
+        <label for="end-date">end date</label>
+        <input type="text" name="end-date" id="end-date" placeholder="yyyy-mm-dd"> 
+        <button type="button" id="find-asteroids-btn" onclick="findAsteroids()">Reurn Asteroids</button>
+    </div>
+    
+    <div>
+        <ul class="asteroid-list">
+
+        </ul>
+    </div>
+
+    <div class="error-statement">
+        <h2>
+            error: no asteroid found
+        </h2>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/spaceAnimation.js"></script>
+</body>
+</html>

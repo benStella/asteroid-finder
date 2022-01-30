@@ -1,0 +1,53 @@
+body {
+    overflow: hidden;
+    background-color: black;
+}
+
+html,body {
+    height: 100%;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 37%;
+    color: white;
+}
+
+#start-date, #end-date, #find-asteroids-btn {
+    margin-bottom: 1vw;
+}
+
+button {
+    width: 15vw;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+}
+
+button:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.asteroid-list {
+    position: absolute;
+    top: 10vh;
+    color: white;
+}
+
+
+.error-statement {
+    color: white;
+    display: none;
+    position: absolute;
+    top: 10vh;
+    left: 41%;
+}
